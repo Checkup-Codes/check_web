@@ -26,3 +26,14 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+
+## Docker
+
+Docker kurulumu için izlenilen yol : https://youtu.be/qECVC6t_2mU?si=SIQgLmYalPmgvoq0
+`docker-compose up`
+`docker container ls`
+`docker inspect b213ç...` IPADddress ---> 5050:Connection, Host Name
+
+`pnpm db:push`
+`pnpm dev`
