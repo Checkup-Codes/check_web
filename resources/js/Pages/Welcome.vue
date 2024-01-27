@@ -49,7 +49,7 @@ defineProps({
             </template>
         </div>
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
-            <div class="text-white text-2xl">Siteyi kodlamama <span class="text-pink-700">yardım</span>  et</div>
+            <div class="text-white text-2xl">Siteyi kodlamama <a href="https://discord.gg/9C4JHVjjcd" class="text-pink-700"> yardım</a>  et</div>
         </div>
     </div>
 </template>
