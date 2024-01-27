@@ -49,7 +49,7 @@ defineProps({
         </div>
 
         <div class="text-white text-2xl text-center">
-           <div> Bu sayfa şuanda geliştirilmekte. <span class="text-pink-700">!</span> </div>
+           <div> Bu sayfa şuanda geliştirilmekte. <span class="text-pink-700">!</span><span class="text-pink-700">!</span> <span class="text-pink-700">!</span> <span class="text-pink-700">!</span>  </div>
             <div>Elimde harika issue'lerim var bakmak ister misin bayım.</div>
             <div> <a href="https://discord.gg/q6AKsKta87" class="text-pink-700"> Discord'ta </a>bekliyom haberin ola. </div>
         </div>
