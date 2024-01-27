@@ -7,7 +7,6 @@
 /vendor
 .server.php
 .htaccess
-.env
 .env.backup
 .env.production
 .phpunit.result.cache
