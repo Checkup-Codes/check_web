@@ -1,6 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LandingPage\ExploreController;
+use App\Http\Controllers\LandingPage\ProductsController;
+use App\Http\Controllers\LandingPage\SolutionsController;
+use App\Http\Controllers\LandingPage\PricingController;
+use App\Http\Controllers\LandingPage\PartnersController;
+use App\Http\Controllers\LandingPage\ResourcesController;
+
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -23,7 +30,7 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -34,5 +41,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/explore', [ExploreController::class, 'index'])->name('lp.explore');
+Route::get('/products', [ProductsController::class, 'index'])->name('lp.products');
+Route::get('/solutions', [SolutionsController::class, 'index'])->name('lp.solutions');
+Route::get('/pricing', [PricingController::class, 'index'])->name('lp.pricing');
+Route::get('/partners', [PartnersController::class, 'index'])->name('lp.partners');
+Route::get('/resources', [ResourcesController::class, 'index'])->name('lp.resources');
 
 require __DIR__.'/auth.php';
