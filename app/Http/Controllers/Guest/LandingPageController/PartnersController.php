@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\LandingPage;
+namespace App\Http\Controllers\Guest\LandingPageController;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PricingController extends Controller
+class PartnersController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return inertia('LandingPage/Pricing');
+        return inertia('Guest/LandingPage/Partners');
     }
 
     /**
