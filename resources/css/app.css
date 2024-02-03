@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "GT America Expanded Bold";
+    src: url("../../public/fonts/GTAmerica/GT-America-Expanded-Bold.otf")
+      format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "GT America Expanded Black";
+    src: url("../../public/fonts/GTAmerica/GT-America-Expanded-Black.otf")
+      format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "GT America Regular";
+    src: url("../../public/fonts/GTAmerica/GT-America-Regular.otf")
+      format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Druk Text Wide Bold";
+    src: url("../../public/fonts/DrukFontFamily/DrukTextWide-Bold.ttf")
+      format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Praktika Rounded Bold Ext";
+    src: url("../../public/fonts/PraktikaRounded-BoldExt.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+

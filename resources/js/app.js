@@ -1,5 +1,6 @@
 import './bootstrap';
 import '../css/app.css';
+import { i18nVue } from 'laravel-vue-i18n'; 
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
@@ -15,8 +16,15 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
-            .mount(el);
-    },
+            .use(i18nVue, { 
+                resolve: async lang => {
+                    const langs = import.meta.glob('../../lang/*.json');
+                    return await langs[`../../lang/${lang}.json`]();
+                }
+            })
+            .mount(el)
+            
+    },  
     progress: {
         color: '#4B5563',
     },

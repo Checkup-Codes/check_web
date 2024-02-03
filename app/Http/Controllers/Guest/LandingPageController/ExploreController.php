@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\LandingPage;
+namespace App\Http\Controllers\Guest\LandingPageController;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -12,7 +12,7 @@ class ExploreController extends Controller
      */
     public function index()
     {
-        return inertia('LandingPage/Explore');
+        return inertia('Guest/LandingPage/Explore');
     }
 
     /**

@@ -1,28 +1,20 @@
 <script setup>
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import { Link } from "@inertiajs/vue3";
+import Sidebar from '@/Layouts/Guest/Sidebar/sidebar.vue'
+import Header from '@/Layouts/Guest/Header/header.vue'
 </script>
 
 <template>
-    <div class="container mx-auto">
-        <div class="flex items-center gap-10 text-md py-3">
-            <Link :href="route('welcome')" class="flex items-center">
-                <ApplicationLogo class="w-20 h-20 fill-current text-gray-900" />
-                <span class="pl-1 text-xl text-blue-800 font-bold"
-                    >Check-up Codes</span
-                >
-            </Link>
-
-            <Link :href="route('lp.explore')">Explore</Link>
-            <Link :href="route('lp.products')">Products</Link>
-            <Link :href="route('lp.solutions')">Solutions</Link>
-            <Link :href="route('lp.pricing')">Pricing</Link>
-            <Link :href="route('lp.partners')">Partners</Link>
-            <Link :href="route('lp.resources')">Resources</Link>
+    <div class="bg-primary flex flex-row">
+        <div class="hidden laptop:block laptop:w-[270px]">
+            <Sidebar />
         </div>
-
-        <div class="container">
-            <slot />
+        <div class="mx-1 w-full">
+            <Header />
+            <div class="col-span-2 h-full border-2 border-black">
+                <div class="container">
+                    <slot />
+                </div>
+            </div>
         </div>
     </div>
 </template>

@@ -1,12 +1,12 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\LandingPage\ExploreController;
-use App\Http\Controllers\LandingPage\ProductsController;
-use App\Http\Controllers\LandingPage\SolutionsController;
-use App\Http\Controllers\LandingPage\PricingController;
-use App\Http\Controllers\LandingPage\PartnersController;
-use App\Http\Controllers\LandingPage\ResourcesController;
+use App\Http\Controllers\Guest\LandingPageController\ExploreController;
+use App\Http\Controllers\Guest\LandingPageController\ProductsController;
+use App\Http\Controllers\Guest\LandingPageController\SolutionsController;
+use App\Http\Controllers\Guest\LandingPageController\PricingController;
+use App\Http\Controllers\Guest\LandingPageController\PartnersController;
+use App\Http\Controllers\Guest\LandingPageController\ResourcesController;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +32,8 @@ Route::get('/', function () {
     ]);
 })->name('welcome');
 
+
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -49,4 +51,4 @@ Route::get('/pricing', [PricingController::class, 'index'])->name('lp.pricing');
 Route::get('/partners', [PartnersController::class, 'index'])->name('lp.partners');
 Route::get('/resources', [ResourcesController::class, 'index'])->name('lp.resources');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
