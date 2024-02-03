@@ -1,0 +1,1 @@
+import{o as t,f as a,a as e,u as r,w as o,F as n,Z as s,d as c}from"./app-9kXgxB1_.js";import{_ as i}from"./GuestLayout-NnYPwgpp.js";import"./ApplicationLogo-vgwrB3di.js";import"./_plugin-vue_export-helper-x3n3nnut.js";const x={__name:"Pricing",setup(m){return(_,l)=>(t(),a(n,null,[e(r(s),{title:"Home"}),e(i,null,{default:o(()=>[c(" Pricing ")]),_:1})],64))}};export{x as default};
