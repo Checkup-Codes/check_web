@@ -1,0 +1,1 @@
+const e={"user.name":"Name","user.email":"Email","user.password":"Password","user.password.confirm":"Confirm Password","register.submit":"Register","register.hasAccount":"Already registered?","header.subtitle":"Next video to be uploaded: Coding a blog site with Laravel"};export{e as default};
