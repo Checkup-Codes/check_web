@@ -27,7 +27,14 @@
         </div>
 
         <div class="flex">
-            <LanguageIcon class="mx-3 my-auto hidden h-6 w-6 dark:text-primary laptop:flex" />
+            <LanguageIcon class="mx-3 my-auto hidden h-6 w-6 dark:text-primary laptop:flex" @click="toggleDropdown" />
+
+            <transition name="fade">
+                <ul v-if="isDropdownOpen" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" :href="route('lang.switch', 'en')">English</a></li>
+                    <li><a class="dropdown-item" :href="route('lang.switch', 'tr')">Türkçe</a></li>
+                </ul>
+            </transition>
         </div>
 
         <div
@@ -67,9 +74,25 @@ import { Link } from '@inertiajs/vue3'
 import { ref } from 'vue'
 
 const isDarkMode = ref(false)
+const isDropdownOpen = ref(false)
+
+const toggleDropdown = () => {
+    isDropdownOpen.value = !isDropdownOpen.value
+}
 
 const toggleDarkMode = () => {
     isDarkMode.value = !isDarkMode.value
     document.documentElement.classList.toggle('dark')
 }
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
     <div class="hidden p-3 dark:text-primary laptop:flex">
         <div class="flex gap-10">
-            <Link v-for="item in menuItems" :key="item.label" :href="item.route">{{ item.label }}</Link>
+            <Link v-for="item in menuItems" :key="item.label" :href="item.route">{{ $t(item.label) }}</Link>
         </div>
     </div>
 
@@ -21,12 +21,12 @@ import { Link } from '@inertiajs/vue3'
 const isMobileMenuOpen = ref(false)
 
 const menuItems = [
-    { label: 'Explore', route: route('lp.explore') },
-    { label: 'Products', route: route('lp.products') },
-    { label: 'Solutions', route: route('lp.solutions') },
-    { label: 'Pricing', route: route('lp.pricing') },
-    { label: 'Partners', route: route('lp.partners') },
-    { label: 'Resources', route: route('lp.resources') },
+    { label: 'header.explore', route: route('lp.explore') },
+    { label: 'header.products', route: route('lp.products') },
+    { label: 'header.solutions', route: route('lp.solutions') },
+    { label: 'header.pricing', route: route('lp.pricing') },
+    { label: 'header.partners', route: route('lp.partners') },
+    { label: 'header.resources', route: route('lp.resources') },
 ]
 
 function toggleMobileMenu() {

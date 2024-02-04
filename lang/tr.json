@@ -7,5 +7,29 @@
         "register.submit": " Kayıt ol",
         "register.hasAccount": "Zaten hesabınız var mı?",
 
-        "header.subtitle": "Yüklenecek bir sonraki video: Laravel ile bir blog sitesi kodlama"
+        "header.subtitle": "Yüklenecek bir sonraki video: Laravel ile bir blog sitesi kodlama",
+        "header.explore": "Keşfet",
+        "header.products": "Ürünler",
+        "header.solutions": "Çözümler",
+        "header.pricing": "Fiyatlandırma",
+        "header.partners": "Ortaklar",
+        "header.resources": "Kaynaklar",
+
+        "sidebar.home": "Anasayfa",
+        "sidebar.inbox": "Gelen Kutusu",
+        "sidebar.squat": "",
+        "sidebar.dynamics": "Dinamikler",
+        "sidebar.tactics": "Taktikler",
+        "sidebar.data-hub": "Veri Merkezi",
+        "sidebar.staff": "Personel",
+        "sidebar.training": "Eğitim",
+        "sidebar.medical-center": "Tıp Merkezi",
+        "sidebar.schdule": "Program",
+        "sidebar.competitions": "Yarışmalar",
+        "sidebar.scouting": "Gözlemcilik",
+        "sidebar.transfers": "Transferler",
+        "sidebar.club-info": "Kulüp Bilgisi",
+        "sidebar.club-vision": "Kulüp Vizyonu",
+        "sidebar.finances": "Finanslar",
+        "sidebar.dev-centre": "Geliş. Merkezi"
     }
