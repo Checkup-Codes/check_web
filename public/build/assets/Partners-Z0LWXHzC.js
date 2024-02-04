@@ -1,0 +1,1 @@
+import{o as t,f as a,a as e,u as r,w as o,F as s,Z as n,d as m}from"./app-Y8hL7Ea3.js";import{_}from"./GuestLayout-02fcp4YJ.js";import"./ApplicationLogo-WWEOaIGN.js";import"./_plugin-vue_export-helper-x3n3nnut.js";const x={__name:"Partners",setup(c){return(l,p)=>(t(),a(s,null,[e(r(n),{title:"Home"}),e(_,null,{default:o(()=>[m(" Partners ")]),_:1})],64))}};export{x as default};

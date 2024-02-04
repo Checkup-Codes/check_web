@@ -35,8 +35,10 @@ export default {
           colors: {
             primary: {
               light: '#ECF1FF',
-              DEFAULT: '#F7F7F7',
-              dark: '#1A202C',
+              DEFAULT: '#FAFAFA',
+              dark: '#171819  ',
+              light_button : '#d4d8e5',
+              dark_button : '#000000',
             },
             secondary: {
               light: '#F7F7F7',

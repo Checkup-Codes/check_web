@@ -1,6 +1,6 @@
 <script setup>
-import { Head, Link } from "@inertiajs/vue3";
-import GuestLayout from "@/Layouts/GuestLayout.vue";
+import { Head, Link } from '@inertiajs/vue3'
+import GuestLayout from '@/Layouts/GuestLayout.vue'
 
 defineProps({
     canLogin: {
@@ -17,7 +17,7 @@ defineProps({
         type: String,
         required: true,
     },
-});
+})
 </script>
 
 <template>
@@ -46,28 +46,24 @@ defineProps({
                 >
             </template>
         </div> -->
-        <div class="">
-            <div class="text-lg py-6">
-                Site yapma aşaması tatlı tatlı devam etmekte. Open source
-                kodlamaya devam ediyorum. Contributor olmak için  {{ $t('register.submit') }}
-                <a href="https://discord.gg/9C4JHVjjcd" class="text-pink-700">
-                    DC</a
-                >
+        <div class="p-5 dark:text-primary">
+            <div class="py-6 text-lg">
+                Site yapma aşaması tatlı tatlı devam etmekte. Open source kodlamaya devam ediyorum. Contributor olmak
+                için {{ $t('register.submit') }}
+                <a href="https://discord.gg/9C4JHVjjcd" class="text-pink-700"> DC</a>
                 gel
             </div>
 
-            <article class="prose-neutral lg:prose-xl">
+            <article class="lg:prose-xl prose-neutral">
                 <h1>Garlic bread with cheese: What the science tells us</h1>
                 <p>
-                    For years parents have espoused the health benefits of
-                    eating garlic bread with cheese to their children, with the
-                    food earning such an iconic status in our culture that kids
-                    will often dress up as warm, cheesy loaf for Halloween.
+                    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+                    children, with the food earning such an iconic status in our culture that kids will often dress up
+                    as warm, cheesy loaf for Halloween.
                 </p>
                 <p>
-                    But a recent study shows that the celebrated appetizer may
-                    be linked to a series of rabies cases springing up around
-                    the country.
+                    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+                    springing up around the country.
                 </p>
                 <!-- ... -->
             </article>

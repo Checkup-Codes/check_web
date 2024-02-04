@@ -17,7 +17,7 @@ class PasswordResetLinkController extends Controller
      */
     public function create(): Response
     {
-        return Inertia::render('Auth/ForgotPassword', [
+        return Inertia::render('Authenticated/Auth/ConfirmPassword', [
             'status' => session('status'),
         ]);
     }
