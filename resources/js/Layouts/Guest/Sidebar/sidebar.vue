@@ -1,7 +1,7 @@
 <template>
     <div class="h-[100vh]">
-        <ul class="space-y-5 px-5 pt-3 font-Prompt">
-            <li class="border-b-2 border-gray-500 pb-3">
+        <ul class="space-y-5 px-5 pt-3 font-Prompt dark:text-primary">
+            <li class="border-gray-500 border-b-2 pb-3">
                 <a href="#" class="flex pl-3">
                     <HomeIcon class="text-black-500 h-6 w-6" />
                     <span class="py-auto px-3">Home</span>
@@ -49,7 +49,7 @@
                     <span class="py-auto px-3">Training</span>
                 </a>
             </li>
-            <li class="border-b-2 border-gray-500 pb-5">
+            <li class="border-gray-500 border-b-2 pb-5">
                 <a href="#" class="flex pl-3">
                     <HomeIcon class="text-black-500 h-6 w-6" />
                     <span class="py-auto px-3">Medical Center</span>
@@ -61,7 +61,7 @@
                     <span class="py-auto px-3">Schdule</span>
                 </a>
             </li>
-            <li class="border-b-2 border-gray-500 pb-5">
+            <li class="border-gray-500 border-b-2 pb-5">
                 <a href="#" class="flex pl-3">
                     <HomeIcon class="text-black-500 h-6 w-6" />
                     <span class="py-auto px-3">Competitions</span>
@@ -73,7 +73,7 @@
                     <span class="py-auto px-3">Scouting</span>
                 </a>
             </li>
-            <li class="border-b-2 border-gray-500 pb-5">
+            <li class="border-gray-500 border-b-2 pb-5">
                 <a href="#" class="flex pl-3">
                     <CubeTransparentIcon class="text-black-500 h-6 w-6" />
                     <span class="py-auto px-3">Transfers</span>
@@ -91,10 +91,10 @@
                     <span class="py-auto px-3">Club Vision</span>
                 </a>
             </li>
-            <li class="border-b-2 border-gray-500 pb-5">
+            <li class="border-gray-500 border-b-2 pb-5">
                 <a href="#" class="flex pl-3">
                     <CurrencyDollarIcon class="text-black-500 h-6 w-6" />
-                    <span class="py-auto px-3 dark:text-red-500">Finances</span>
+                    <span class="py-auto dark:text-red-500 px-3">Finances</span>
                 </a>
             </li>
             <li class="">
@@ -108,12 +108,15 @@
 </template>
 
 <script setup>
-import { HomeIcon } from '@heroicons/vue/24/solid'
-import { InboxIcon } from '@heroicons/vue/24/solid'
-import { MagnifyingGlassIcon } from '@heroicons/vue/24/solid'
-import { CubeTransparentIcon } from '@heroicons/vue/24/solid'
-import { CurrencyDollarIcon } from '@heroicons/vue/24/solid'
-import { CircleStackIcon } from '@heroicons/vue/24/solid'
-import { UsersIcon } from '@heroicons/vue/24/solid'
-import { PresentationChartLineIcon } from '@heroicons/vue/24/solid'
+import {} from '@heroicons/vue/24/solid'
+import {
+    InboxIcon,
+    HomeIcon,
+    MagnifyingGlassIcon,
+    CubeTransparentIcon,
+    CurrencyDollarIcon,
+    CircleStackIcon,
+    UsersIcon,
+    PresentationChartLineIcon,
+} from '@heroicons/vue/24/solid'
 </script>

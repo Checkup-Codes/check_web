@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden p-3 laptop:flex">
+    <div class="hidden p-3 dark:text-primary laptop:flex">
         <div class="flex gap-10">
             <Link v-for="item in menuItems" :key="item.label" :href="item.route">{{ item.label }}</Link>
         </div>
