@@ -11,7 +11,7 @@ import Header from '@/Layouts/Guest/Header/header.vue'
         <div class="mx-1 w-full">
             <Header />
             <div class="border-black col-span-2 h-full border-2">
-                <div class="container">
+                <div class="">
                     <slot />
                 </div>
             </div>

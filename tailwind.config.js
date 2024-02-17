@@ -39,6 +39,9 @@ export default {
               dark: '#171819  ',
               light_button : '#d4d8e5',
               dark_button : '#000000',
+              tag_light : '#B3B4DD',
+              tag_dark : '#282B2E',
+              percent_progress : '#069002',
             },
             secondary: {
               light: '#F7F7F7',
@@ -54,6 +57,9 @@ export default {
               light: '#F7F7F7',
               DEFAULT: '#F7F7F7',
               dark: '#F7F7F7',
+            },
+            test : {
+              DEFAULT : '#FAF124',
             },
           },
     },

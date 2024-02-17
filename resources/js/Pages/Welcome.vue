@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3'
 import GuestLayout from '@/Layouts/GuestLayout.vue'
+import TableCard from '@/Components/Projects/TableCard.vue'
 
 defineProps({
     canLogin: {
@@ -24,51 +25,64 @@ defineProps({
     <Head title="Home" />
 
     <GuestLayout>
-        <!--<div v-if="canLogin" class="">
-            <Link
-                v-if="$page.props.auth.user"
-                :href="route('dashboard')"
-                class=""
-                >Dashboard</Link>
-           
-            <template v-else>
-                <Link
-                    :href="route('login')"
-                    class=""
-                    >Log in</Link
-                >
-               
-                <Link
-                    v-if="canRegister"
-                    :href="route('register')"
-                    class="ms-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                    >Register</Link
-                >
-            </template>
-        </div> -->
-        <div class="p-5 dark:text-primary">
-            <div class="py-6 text-lg">
-                Site yapma aşaması tatlı tatlı devam etmekte. Open source kodlamaya devam ediyorum. Contributor olmak
-                için {{ $t('register.submit') }}
-                <a href="https://discord.gg/9C4JHVjjcd" class="text-pink-700"> DC</a>
-                gel
-            </div>
-
-            <article class="lg:prose-xl prose-neutral">
-                <h1>Garlic bread with cheese: What the science tells us</h1>
-                <p>
-                    For years parents have espoused the health benefits of eating garlic bread with cheese to their
-                    children, with the food earning such an iconic status in our culture that kids will often dress up
-                    as warm, cheesy loaf for Halloween.
-                </p>
-                <p>
-                    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-                    springing up around the country.
-                </p>
-                <!-- ... -->
-            </article>
+        <div class="bg-primary-dark">
+            Site yapma aşaması tatlı tatlı devam etmekte. Open source kodlamaya asd ediyorum. Contributor olmak için
+            {{ $t('register.submit') }}
+            <a href="https://discord.gg/9C4JHVjjcd" class="text-pink-700"> DC</a>
+            gel
+        </div>
+        <div class="grid grid-cols-2 gap-5 p-5 dark:text-primary">
+            <div class="bg-test py-6 text-lg">asdasd</div>
+            <table class="">
+                <tr class="">
+                    <th>Logo</th>
+                    <th class="w-[80%]">Contact</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <TableCard name="Check-up Codes" tag="#WebTasarım" precent="85" />
+                </tr>
+                <tr>
+                    <TableCard name="Uçak Analiz Sistemi," tag="#WebTasarım" precent="85" />
+                </tr>
+                <tr>
+                    <TableCard name="Check-up Codes" tag="#WebTasarım" precent="85" />
+                </tr>
+                <tr>
+                    <td>HAHAHA</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>HAHAHA</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>HAHAHA</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
         </div>
     </GuestLayout>
 </template>
 
-<style></style>
+<style scoped>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #d4d8e5;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #d4d8e5;
+}
+</style>
